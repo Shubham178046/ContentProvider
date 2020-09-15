@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/name" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_alignLeft="@+id/name"
+            android:ems="10"
+            android:hint="@string/phone" />
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/phone"
+            android:layout_below="@+id/phone"
+            android:layout_marginTop="30dp"
+            android:text="@string/add"
+            android:background="#ADD8E6"/>
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnAdd"
+            android:layout_below="@+id/btnAdd"
+            android:layout_marginTop="20dp"
+            android:text="@string/show"
+            android:background="#ADD8E6" />
+    </LinearLayout>
+
+</RelativeLayout>
